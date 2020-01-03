@@ -213,21 +213,23 @@ Download the Linux image file with the link above.
 
 It is emulating CD/DVD player to install an OS, in essence.
 
-8. Select the VM and click the orange button "Setting".
+8. Select the VM and click the orange button "Settings". 
 
 ![create_new_vm_opensuse_setting](./screenshot/create_new_vm_opensuse_setting.png)
 
 
 
-9. Select the Empty disc under the "Storage" on the left panel, click the button on the right.  
+9. Go to the window "storage", click the first button named "Add optical disc" under the pane "Storage Devices".  
 
-   ![create_new_vm_suse_6_settings_1_storage](./screenshot/create_new_vm_suse_6_settings_1_storage.png)
+   ![create_new_vm_suse_settings_1_storage_0](./screenshot./create_new_vm_suse_settings_1_storage_0.png)
+
+   ![create_new_vm_suse_settings_1_storage_1](./screenshot./create_new_vm_suse_settings_1_storage_1.png)
 
    
 
-10. Select "choose disk file" on the drag-down menu, choose the image file "openSUSE-13.2-DVD-x_64.iso" in your machine.
+10. Click button "Add" and choose the image file "openSUSE-13.2-DVD-x_64.iso" in your machine.
 
-![create_new_vm_suse_settings_1_storage_2](./screenshot/create_new_vm_suse_6_settings_1_storage_2.png)
+![create_new_vm_suse_settings_1_storage_2](./screenshot./create_new_vm_suse_settings_1_storage_2.png)
 
 
 
@@ -273,7 +275,7 @@ If a warning popped up (shown below), confirm it and continue. If it is not boot
 
 15. Now you should see it booting, select installation.
 
-![create_new_vm_opensuse_13_2_installation_1_booting](./screenshot/create_new_vm_opensuse_13_2_installation_1_booting.png)
+![create_new_vm_opensuse_13_2_installation_1_booting](./screenshot./create_new_vm_opensuse_13_2_installation_1_booting.png)
 
 Basically leave everything default.
 
@@ -283,7 +285,7 @@ Basically leave everything default.
 
 16. Suggested Partitioning. Leave it default.
 
-![create_new_vm_opensuse_13_2_installation_2_suggested_partition](./screenshot/create_new_vm_opensuse_13_2_installation_2_suggested_partition.png)
+![create_new_vm_opensuse_13_2_installation_2_suggested_partition](./screenshot./create_new_vm_opensuse_13_2_installation_2_suggested_partition.png)
 
 
 
@@ -291,7 +293,7 @@ Basically leave everything default.
 
 17. clock and Time Zone. 
 
-![create_new_vm_opensuse_13_2_installation_3_time_zone](./screenshot/create_new_vm_opensuse_13_2_installation_3_time_zone.png)
+![create_new_vm_opensuse_13_2_installation_3_time_zone](./screenshot./create_new_vm_opensuse_13_2_installation_3_time_zone.png)
 
 
 
@@ -299,13 +301,13 @@ Basically leave everything default.
 
 18. Desktop Selection. Leave it to KDE by default.
 
-![create_new_vm_opensuse_13_2_installation_4_desktop_selection](./screenshot/create_new_vm_opensuse_13_2_installation_4_desktop_selection.png)
+![create_new_vm_opensuse_13_2_installation_4_desktop_selection](./screenshot./create_new_vm_opensuse_13_2_installation_4_desktop_selection.png)
 
 
 
 19. Make sure you check the box "Use this password for system administrator". It is checked by default.
 
-![create_new_vm_opensuse_13_2_installation_5_create_user](./screenshot/create_new_vm_opensuse_13_2_installation_5_create_user.png)
+![create_new_vm_opensuse_13_2_installation_5_create_user](./screenshot./create_new_vm_opensuse_13_2_installation_5_create_user.png)
 
 
 
@@ -313,7 +315,7 @@ Basically leave everything default.
 
 20. Overviews of your settings. Continue to install.
 
-![create_new_vm_opensuse_13_2_installation_6_installation_settings](./screenshot/create_new_vm_opensuse_13_2_installation_6_installation_settings.png)
+![create_new_vm_opensuse_13_2_installation_6_installation_settings](./screenshot./create_new_vm_opensuse_13_2_installation_6_installation_settings.png)
 
 
 
@@ -323,17 +325,49 @@ Basically leave everything default.
 
     The VM will restart automatically, just close the window and choose "Power off".
 
-    ![create_new_vm_suse_7_poweroff_and_remove_disc](./screenshot/create_new_vm_suse_7_poweroff_and_remove_disc.png)
+    ![create_new_vm_suse_7_poweroff_and_remove_disc](./screenshot./create_new_vm_suse_7_poweroff_and_remove_disc.png)
 
     Back to VM settings, go to "storage", select the openSUSE disc and click the button on the bottom to remove it.
 
-    ![create_new_vm_suse_7_poweroff_and_remove_disc_2](./screenshot/create_new_vm_suse_7_poweroff_and_remove_disc_2.png)
+    ![create_new_vm_suse_7_poweroff_and_remove_disc_2](./screenshot./create_new_vm_suse_7_poweroff_and_remove_disc_2.png)
 
     Now you are free to restart the VM!
     
-    ![create_new_vm_suse_8_restart](./screenshot/create_new_vm_suse_8_restart.png)
+    ![create_new_vm_suse_8_restart](./screenshot./create_new_vm_suse_8_restart.png)
 
+#### Install the Guest Additions DVD image (optional)
 
+22. To make the shared-folder and some other features work, we need to install the "Guest Additions DVD image".
+
+    Running the VM, click the option "Devices" on the top menu of the window, select "Insert guest Additions CD image".
+    
+    ![create_new_vm_suse_10_install_guest_image](./screenshot./create_new_vm_suse_10_install_guest_image.png)
+    
+    
+    
+    Particularly, if the disc doesn't automatically run, manually execute the script there. The script is called "VBoxLinuxAdditions" on Linux. 
+    
+    * Click the button on the bottom menu(show below) and "Open with File Manager".
+    
+      ![create_new_vm_suse_10_install_guest_image_1](./screenshot/create_new_vm_suse_10_install_guest_image.png)
+    
+      
+    
+    * "Right Click" with your mouse. Select "Open Terminal Here" in the sub-menu "Actions".
+    
+      ![create_new_vm_suse_10_install_guest_image_2](./screenshot/create_new_vm_suse_10_install_guest_image_2.png)
+    
+    
+    
+    * Run command `sudo bash VBoxLinuxAdditions.run`. Restart the VM to have it in effect.
+    
+      ![create_new_vm_suse_10_install_guest_image_3](./screenshot/create_new_vm_suse_10_install_guest_image_3.png)
+    
+      
+    
+    * If anything wrong happens due to the "Guest Additions", navigate to the directory and uninstall it by run command `sudo bash VBoxLinuxAdditions.run uninstall` on terminal.
+    
+      ![create_new_vm_suse_10_uninstall_guest_image](./screenshot/create_new_vm_suse_10_uninstall_guest_image.png)
 
 #### Exclusive bug of openSUSE 13.2
 
@@ -346,7 +380,7 @@ It could be resolved by manually restarting the Network Manager service.
 1. Click the openSUSE icon on the left-bottom corner.
 2. Select App "Terminal" in the "Favorites" column.
 
-![create_new_vm_suse_9_restart_network_manager](./screenshot/create_new_vm_suse_9_restart_network_manager.png)
+![create_new_vm_suse_9_restart_network_manager](./screenshot./create_new_vm_suse_9_restart_network_manager.png)
 
 3. Run command `sudo systemctl restart NetworkManager`. 
 
@@ -356,7 +390,7 @@ It could be resolved by manually restarting the Network Manager service.
 
    
 
-![create_new_vm_suse_9_restart_network_manager_2](./screenshot/create_new_vm_suse_9_restart_network_manager_2.png)
+![create_new_vm_suse_9_restart_network_manager_2](./screenshot./create_new_vm_suse_9_restart_network_manager_2.png)
 
 4. Good to go!
 
