@@ -10,10 +10,6 @@
 
 
 
-##### Group Number: (Replace the placeholder below)
-
-?
-
 ##### Student Names: (Replace the placeholder below)
 
 Firstname1 Lastname1
