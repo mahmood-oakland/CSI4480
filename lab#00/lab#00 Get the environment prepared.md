@@ -4,7 +4,7 @@ In this class, we are going to do labs on Windows and Linux (openSUSE) platforms
 
 We will install Windows 10 on a hard drive (Host Machine), and create a Virtual Machine(VM) with VirtualBox running Linux. You may also consider a dual-boot option.
 
-Note: Except for USB devices and hard, all software will be provided in class. They can be downloaded from http://192.168.2.4/shares/labs. Alternatively, you can download them ahead of class.
+Note: Except for USB devices and hard drives, all software used in this lab will be provided in class. 
 
 [TOC]
 
@@ -14,9 +14,9 @@ Note: Except for USB devices and hard, all software will be provided in class. T
 
 #### Get a SATA hard drive(100+GB)
 
-The following manual is based on a brand-new hard drive. Alternatively, you can use a hard drive without any personal data.
+It is recommended that you use a hard drive without any personal data.
 
-Note: There are several kinds of interface of hard drives, only SATA, SATA3, and SATAe are working here.
+Note: There are several kinds of interface of hard drives, only SATA, SATA3, and SATAe work on the kab computers.
 
 #### Get OS image files
 
@@ -31,13 +31,13 @@ On your Windows laptop/PC,
 
 1. Install software [rufus](https://ubuntu.com/download/desktop/thank-you?version=18.04.3&architecture=amd64) (click it to download directly from https://rufus.ie)
 
-2. Get known about your firmware on your motherboard. (BIOS or UEFI). 
+2. Get to know about your firmware of your motherboard. (BIOS or UEFI). 
 
    ​	There are two kinds of machine in the laboratory. The one with one single hard-drive slot (referred by **type 1** below) only supports BIOS, while the other (with multiple hard drives, referred by **type 2**) supports UEFI and BIOS (legacy). 
 
-   ​	In our lab, **always choose BIOS**.
+   ​	During installation, **always choose BIOS**.
 
-Note: If you wanna to make a dual-boot, ENSURE you always use the SAME bootable mode(BIOS or UEFI). Otherwise, take any potential risk at your own.  
+Note: If you wanna to make a dual-boot, ENSURE you always use the SAME bootable mode(BIOS or UEFI).
 
 3. Insert your USB device.
 
@@ -46,26 +46,26 @@ Note: If you wanna to make a dual-boot, ENSURE you always use the SAME bootable 
 	
 	* Choose the Windows 10 image file you just downloaded.
 	
-	* Choose your boot mode.  (Again, in our lab, **always choose BIOS**.)
+	* Choose your boot mode.  (Reminder, **always choose BIOS**.)
 	![make_bootable_windows_with_rufus](./screenshot/make_bootable_windows_with_rufus.png)
 
 	* Confirm and wait for completion.
 
 
 
-If you are a Mac user, use [UNetbootin](https://github.com/unetbootin/unetbootin/releases/download/675/unetbootin-mac-675.dmg) to do the same thing. Refer to https://unetbootin.github.io/. 
+In case you are making bootable USB using a Macbook, use [UNetbootin](https://github.com/unetbootin/unetbootin/releases/download/675/unetbootin-mac-675.dmg) to do the same thing. Refer to https://unetbootin.github.io/ for details.  
 
 ### Install Windows on the hard drive
 
 #### Before installation
 
-1. Insert hard disk case to the machine with your hard disk installed and lock down, if you forget to lock the hard disk case, the hard disk might not work.
+1. Insert hard disk case to the machine with your hard disk properly.
 2. Insert the bootable USB to the same machine.
 3. Restart computer if it is already on.    
 
 #### Installation
 
-1. Enter Boot Menu and select your USB devices to boot (again, **under the BIOS/legacy mode**).
+1. Since we want to boot from USB, select the USB device to boot by selecting a option like this  (again, **under the BIOS/legacy mode**, see screenshot below) in the Boot Menu.
    * With type 1 machines, directly tap F9 or press ESC and later choose "Boot Menu" after it starts. Select your USB device to boot(Here the label is "VendorCoProductCode".
    
      ![boot-from-usb-BIOS-type1](./screenshot/boot-from-usb-BIOS-type1.jpg)
@@ -76,11 +76,11 @@ If you are a Mac user, use [UNetbootin](https://github.com/unetbootin/unetbootin
    
      
    
-2. Following the instruction and complete the installation with your account set up. 
+2. Follow the instruction and complete the installation with your account set up. 
 	* No need to connect to WIFI, actually all of the security machines are offline. 
 	
-	* Without specific warning, just leave everything default.
-  
+	* It you are not receiving any warning, just leave everything default.
+    
      1. Confirm default language, zone, and keyboard and later click "Install Now"
      
      2. Click "I don't have product key"
@@ -95,9 +95,9 @@ If you are a Mac user, use [UNetbootin](https://github.com/unetbootin/unetbootin
      
      5. Select "Custom: Install Windows only (advanced)".
      
-     6. Delete all current partitions if there are. Just leave a empty unallocated hard drive there.
+     6. Delete all current partitions if there are any. Just leave a empty unallocated hard drive there.
      
-        Attention: If you are using an used disk with personal data, it is fine to keep them with sufficient partition background. Otherwise, just follow this manual, unless you do have a particular situation.
+        Attention: If you are using an used disk with personal data, it is fine to keep them with sufficient partition background. Otherwise, just follow this manual.
      
         ![Windows-setup-BIOS-partition-1](./screenshot/Windows-setup-BIOS-partition-1.jpg)
      
@@ -107,14 +107,14 @@ If you are a Mac user, use [UNetbootin](https://github.com/unetbootin/unetbootin
      
         ![Windows-setup-BIOS-partition-2](./screenshot/Windows-setup-BIOS-partition-2.jpg)
      
-        Note: 100 GB is big enough for our labs. **You are free to use the entire disk**, at your own risk. It is a good habit to make a partition as small as it needs to be, so that you could create multiple partitions to make the best use of the disk. It helps to avoid data loss when OS errors happen by saving personal data in isolated partitions. In addition, multiple partitions make your hard drive versatile, for example, making a dual-boot. 
+        Note: 100 GB is big enough for our labs. **You are free to use the entire disk**. It is a good habit to make a partition as small as it needs to be, so that you could create multiple partitions to make the best use of the disk. It helps to avoid data loss when OS errors happen by saving personal data in isolated partitions. In addition, multiple partitions help to achieve other advantages, for example, making a dual-boot HDD. 
      
-  
-     8. Confirm the pop up for Windows build-in partition policy.
+    
+     8. Confirm the pop up for Windows build-in partition policy by clicking the button "OK". (see screenshot below)
      
         ![Windows-setup-BIOS-partition-3](./screenshot/Windows-setup-BIOS-partition-3.jpg)
         
-     9. Now Windows Setup program has created two partitions for you within exact 100 GB space.
+     9. Now Windows Setup program has created two partitions for you automatically.
      
         Select the primary partition and start the installation.
      
@@ -128,21 +128,21 @@ If you are a Mac user, use [UNetbootin](https://github.com/unetbootin/unetbootin
 
 #####  Hardware drivers
 
-Usually right after we newly install a Windows on the hard drive, we need to install relevant drivers to achieve best performance (especially for personal usage). However, here we don't really need to install any drivers. Network Adapter is automatically working on Windows 10. 
+Usually right after we install a Windows on the hard drive, we need to install relevant drivers to achieve best performance (especially for personal usage). However, here we don't really need to install any drivers. Network Adapter is automatically working on Windows 10. 
 
-Note: You should sit at the same seats and **use the same machines** throughout the labs. Otherwise, you hard drive won't be able to boot (from another machine). For more details, it is a problem only on Windows Host Machines. (Linux works well.)
+<u>Note: You should sit at **the same seats** and **use the same machines** throughout the labs. Otherwise, you hard drive won't be able to boot (from another machine).</u> For more details, it is a problem only on Windows Host Machines. (Linux works well.)
 
 ##### Useful software
 
-Here are some good software and tools I recommend to you. 
+Here are some recommended software and tools for you. These will assist you in incoming labs.
 
-Offline copy might be able to provided and alternatively you could download them ahead of class.
+In you spare time, you could download them.
 
 | Name                                                         | Description                                      |
 | ------------------------------------------------------------ | ------------------------------------------------ |
 | [LibreOffice](https://www.libreoffice.org/download/download/) | Free and open source replacement for Offices 365 |
 | [Picpick](https://picpick.app/en/download/)                  | Amazing screenshot tool                          |
-| [Firefox](https://www.mozilla.org/en-US/firefox/new/)        | Internet Browser                                 |
+| [Firefox](https://www.mozilla.org/en-US/firefox/new/)        | Web Browser                                      |
 | [FoxitReader](https://www.foxitsoftware.com/downloads/)      | Free PDF reader                                  |
 
 
@@ -174,7 +174,7 @@ Download the Linux image file with the link above.
 
 
 
-3. Allocate enough memory to the VM of at least 1024 MB (2048 MB recommended). Insufficient memory will result in formidable problems.
+3. Allocate enough memory for the VM - at least 1024 MB (2048 MB recommended). Insufficient memory will result in formidable problems.
 
 ![create_new_vm_opensuse_memory_allocation](./screenshot/create_new_vm_opensuse_memory_allocation.png)
 
@@ -182,14 +182,14 @@ Download the Linux image file with the link above.
 
 4. Select options "create a virtual hard disk now". 
 
-   It will create files in your host machine supporting the VM, so make sure there are at least 20GB available in your host machine.
+   It will create files in your host machine( hosting the VM), so make sure there are at least 20GB available in your host machine.
 
 ![create_new_vm_opensuse_hard_disk_setup](./screenshot/create_new_vm_opensuse_hard_disk_setup.png)
 
 
 
 
-5. Select "VDI".
+5. Select "VDI" as shown below.
 
 ![create_new_vm_opensuse_hard_disk_file_type](./screenshot/create_new_vm_opensuse_hard_disk_file_type.png)
 
@@ -201,7 +201,7 @@ Download the Linux image file with the link above.
 
 
 
-7. Decide file location. Set the size limitation. It should be at least 20GB.
+7. Choose the path of VDI file. Set the size limitation. It should be at least 20GB as shown below.
 
 ![create_new_vm_opensuse_file_location](./screenshot/create_new_vm_opensuse_file_location.png)
 
@@ -265,7 +265,7 @@ Add a shard folder to share file with the VM for your convenience in the labs.
 
 #### Boot from the disc
 
-14. Back to the VM manager window, (select the VM and) click the green button "Start".
+14. Go back to the VM manager window, (select the VM and) click the green button "Start".
 
 If a warning popped up (shown below), confirm it and continue. If it is not booting, manual choose openSUSE in the option list. Otherwise, go back to step 9&10.
 
@@ -321,7 +321,7 @@ Basically leave everything default.
 
 #### Remove bootable disc
 
-21. Finally you have grown through this long journey and have it successfully installed. Just one more thing before we cheer, you need to remove the optical drive just like unplugging your bootable USB when the Windows installation is completed on a host machine! 
+21. Congratulation!! Finally you have successfully installed it. Just one more thing before we cheer, you need to remove the optical drive just like unplugging your bootable USB when the Windows installation is completed on a host machine! 
 
     The VM will restart automatically, just close the window and choose "Power off".
 
