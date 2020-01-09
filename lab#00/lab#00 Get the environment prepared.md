@@ -1,10 +1,10 @@
 # lab#00 Get the environment prepared
 
-In this class, we are going to do labs on Windows and Linux (openSUSE) platforms. Since tools used in the labs work on almost all version of Windows and Linux, it doesn't make a big difference what version of Windows or Linux you use. However, to avoid unnecessary trouble, you should all use Windows 10 and openSUSE 13.2 with 64 bits provided below.
+In this class, we are going to do cybersecurity labs on Windows and Linux (openSUSE) platforms. Since tools used in the labs work on almost all version of Windows and Linux, it doesn't make a big difference what version of Windows or Linux you use. However, to avoid unnecessary trouble, you should all use Windows 10 and openSUSE 13.2 (64 bits) provided below.
 
-We will install Windows 10 on a hard drive (Host Machine), and create a Virtual Machine(VM) with VirtualBox running Linux. You may also consider a dual-boot option.
+We will install Windows 10 on a hard drive (Host Machine), and create a Virtual Machine(VM) with VirtualBox running Linux. As an alternative, you may also consider a dual-boot option in host machine to run both OS.
 
-Note: Except for USB devices and hard drives, all software used in this lab will be provided in class. 
+Note: Except for USB devices and hard drives, all software used in this lab will be provided. 
 
 [TOC]
 
@@ -31,15 +31,15 @@ On your Windows laptop/PC,
 
 1. Install software [rufus](https://ubuntu.com/download/desktop/thank-you?version=18.04.3&architecture=amd64) (click it to download directly from https://rufus.ie)
 
-2. Get to know about your firmware of your motherboard. (BIOS or UEFI). 
+2. Get to know about firmware of your motherboard. (BIOS or UEFI). 
 
-   ​	There are two kinds of machine in the laboratory. The one with one single hard-drive slot (referred by **type 1** below) only supports BIOS, while the other (with multiple hard drives, referred by **type 2**) supports UEFI and BIOS (legacy). 
+   ​	There are two kinds of Security machines in the EC554. The one with one single hard-drive slot (referred by **type 1** below) only supports BIOS, while the other (with multiple hard drives, referred by **type 2**) supports UEFI and BIOS (legacy). 
 
    ​	During installation, **always choose BIOS**.
 
 Note: If you wanna to make a dual-boot, ENSURE you always use the SAME bootable mode(BIOS or UEFI).
 
-3. Insert your USB device.
+3. Insert your USB flash drive.
 
 4. Run rufus to make a bootable USB.
 	* Make sure it is your USB device (eg. check the size).
@@ -60,7 +60,7 @@ In case you are making bootable USB using a Macbook, use [UNetbootin](https://gi
 #### Before installation
 
 1. Insert hard disk case to the machine with your hard disk properly.
-2. Insert the bootable USB to the same machine.
+2. Plugin the bootable USB disk to the same machine.
 3. Restart computer if it is already on.    
 
 #### Installation
@@ -76,7 +76,7 @@ In case you are making bootable USB using a Macbook, use [UNetbootin](https://gi
    
      
    
-2. Follow the instruction and complete the installation with your account set up. 
+2. Follow the instructions and complete the installation with your account set up. 
 	* No need to connect to WIFI, actually all of the security machines are offline. 
 	
 	* It you are not receiving any warning, just leave everything default.
@@ -87,7 +87,7 @@ In case you are making bootable USB using a Macbook, use [UNetbootin](https://gi
      
         ![Windows-setup-installtion-1](./screenshot/Windows-setup-installtion-1.jpg)
      
-     3. Select a version of Windows to install. Basically, all of them are working for the labs. Since the Pro has most features, we choose pro.
+     3. Select a version of Windows to install. Basically, all of them work for the labs. Since the Pro has most features, we choose pro.
      
         ![Windows-setup-choose-windows-version](./screenshot/Windows-setup-choose-windows-version.jpg)
      
