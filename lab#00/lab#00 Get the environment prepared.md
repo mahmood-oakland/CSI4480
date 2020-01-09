@@ -1,10 +1,10 @@
 # lab#00 Get the environment prepared
 
-In this class, we are going to do labs on Windows and Linux (openSUSE). Since most of  labs are basically in introductory level, it doesn't make a big difference what version of Windows or Linux you use. However, to avoid unnecessary trouble, you should all use Windows 10 and openSUSE 13.2 with 64 bits provided below.
+In this class, we are going to do labs on Windows and Linux (openSUSE) platforms. Since tools used in the labs work on almost all version of Windows and Linux, it doesn't make a big difference what version of Windows or Linux you use. However, to avoid unnecessary trouble, you should all use Windows 10 and openSUSE 13.2 with 64 bits provided below.
 
-We will install Windows 10 on a hard drive (Host Machine), and create a Virtual Machine(VM) with VirtualBox running Linux.
+We will install Windows 10 on a hard drive (Host Machine), and create a Virtual Machine(VM) with VirtualBox running Linux. You may also consider a dual-boot option.
 
-Note: Except for USB devices and hard disks, all software may be provided in class, alternatively, you can download them ahead of class.
+Note: Except for USB devices and hard, all software will be provided in class. They can be downloaded from http://192.168.2.4/shares/labs. Alternatively, you can download them ahead of class.
 
 [TOC]
 
@@ -80,7 +80,7 @@ If you are a Mac user, use [UNetbootin](https://github.com/unetbootin/unetbootin
 	* No need to connect to WIFI, actually all of the security machines are offline. 
 	
 	* Without specific warning, just leave everything default.
-   
+  
      1. Confirm default language, zone, and keyboard and later click "Install Now"
      
      2. Click "I don't have product key"
@@ -109,7 +109,7 @@ If you are a Mac user, use [UNetbootin](https://github.com/unetbootin/unetbootin
      
         Note: 100 GB is big enough for our labs. **You are free to use the entire disk**, at your own risk. It is a good habit to make a partition as small as it needs to be, so that you could create multiple partitions to make the best use of the disk. It helps to avoid data loss when OS errors happen by saving personal data in isolated partitions. In addition, multiple partitions make your hard drive versatile, for example, making a dual-boot. 
      
-   
+  
      8. Confirm the pop up for Windows build-in partition policy.
      
         ![Windows-setup-BIOS-partition-3](./screenshot/Windows-setup-BIOS-partition-3.jpg)
